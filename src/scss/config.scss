@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 65.2%;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* body */
+
+/******************************************Global Styles**********************************/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
