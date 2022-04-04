@@ -10,13 +10,8 @@ html {
   box-sizing: inherit;
 }
 
-/* body */
-
-/******************************************Global Styles**********************************/
-
 a {
   text-decoration: none;
-  color: black;
 }
 
 ul {
@@ -25,13 +20,14 @@ ul {
   list-style: none;
 }
 
-.container {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 img {
   max-width: 100%;
-  display: inline-block;
+  display: block;
+  height: auto;
+}
+
+.container {
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto;
 }

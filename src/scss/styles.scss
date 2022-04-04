@@ -1,5 +1,7 @@
-@import 'variables.scss';
-@import 'normalize.scss';
-@import 'mixins.scss';
-@import 'config.scss';
-@import './header/header.scss';
+@import './config/variables.scss';
+@import './config/normalize.scss';
+@import './helpers/helpers.scss';
+@import './helpers/mixins.scss';
+@import './base/resets.scss';
+@import './layout/header.scss';
+@import './components/video.scss';
