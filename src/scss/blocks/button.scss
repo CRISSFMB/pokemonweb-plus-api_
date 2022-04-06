@@ -1,0 +1,18 @@
+.btn {
+  max-width: 18.6rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: white;
+
+  &--gosth {
+    border: 2px solid #0061af;
+    background-color: unset;
+    border-radius: 1.5rem;
+    transition: background 1s ease;
+  }
+  &--gosth:hover {
+    background-color: #0061af;
+    color: white;
+  }
+}

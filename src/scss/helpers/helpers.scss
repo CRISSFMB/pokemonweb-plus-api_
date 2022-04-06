@@ -1,5 +1,59 @@
-// center-content
+/* center-content */
 .center {
   display: flex;
   justify-content: center;
+}
+
+.center-margin {
+  margin: 0 auto;
+}
+
+/*text*/
+
+.text-center {
+  text-align: center;
+}
+
+.title-section-default {
+  font-family: $font-poppins; // titles
+  padding: 3rem 0;
+  font-size: 2rem;
+  margin: 0;
+  @include desktop {
+    font-size: 4rem;
+  }
+}
+
+/*paddings*/
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+/*margins*/
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }

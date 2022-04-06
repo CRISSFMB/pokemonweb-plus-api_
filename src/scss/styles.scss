@@ -1,7 +1,11 @@
 @import './config/variables.scss';
 @import './config/normalize.scss';
-@import './helpers/helpers.scss';
 @import './helpers/mixins.scss';
+@import './helpers/helpers.scss';
 @import './base/resets.scss';
-@import './layout/header.scss';
-@import './components/video.scss';
+@import './blocks/video.scss';
+@import './layout/main.scss';
+@import './blocks/nav.scss';
+@import './blocks/imput-search.scss';
+@import './blocks/cards.scss';
+@import './blocks/button.scss';

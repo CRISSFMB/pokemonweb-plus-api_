@@ -1,0 +1,16 @@
+.Imput-search {
+  border-radius: 7px;
+  border: none;
+  padding: 4px;
+  width: 50%;
+  height: 30px;
+  font-size: 14px;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $grey;
+    font-size: 14px;
+  }
+}
