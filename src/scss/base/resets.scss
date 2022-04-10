@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
   font-size: 65.2%;
 }
+
 // * {
 //   border: 1px solid rgb(26, 89, 99);
 // }
@@ -15,8 +16,9 @@ html {
 
 a {
   text-decoration: none;
-  color: black;
-  display: block;
+  // color: black;
+  // display: block;
+  /* Estilos así solo se dan si todos los links de todo el sitio van a ser así, por lo general en un reset solo se resetean estilos que dan los navegadores*/
 }
 
 ul {
@@ -29,10 +31,4 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
-}
-
-.container {
-  max-width: 1500px;
-  width: 90%;
-  margin: 0 auto;
 }

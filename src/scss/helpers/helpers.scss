@@ -1,3 +1,10 @@
+/* Esto no va en reset porque no es una etiqueta html, puede ir acá en helpers porque es una clase que usas en cualquier parte del proyecto y que solo da estilos específicos */
+.container {
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* center-content */
 .center {
   display: flex;
@@ -19,6 +26,7 @@
   padding: 3rem 0;
   font-size: 2rem;
   margin: 0;
+
   @include desktop {
     font-size: 4rem;
   }
@@ -29,12 +37,15 @@
 .py-1 {
   padding: 1rem 0;
 }
+
 .py-2 {
   padding: 2rem 0;
 }
+
 .py-3 {
   padding: 3rem 0;
 }
+
 .py-4 {
   padding: 4rem 0;
 }
@@ -45,14 +56,17 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .my-2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 .my-3 {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
 .my-4 {
   margin-top: 4rem;
   margin-bottom: 4rem;
