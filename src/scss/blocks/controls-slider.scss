@@ -1,0 +1,22 @@
+.controls {
+  width: 100px;
+  position: relative;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: $black;
+    font-weight: lighter;
+    font-family: monospace;
+    cursor: pointer;
+    font-size: 3rem;
+  }
+}
