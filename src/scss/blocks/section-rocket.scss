@@ -70,7 +70,7 @@
   margin-left: -100%;
   overflow-x: hidden;
   position: absolute;
-  bottom: -60px;
+  bottom: -115px;
   @include desktop {
     bottom: -75px;
   }
@@ -109,8 +109,6 @@
     height: 300px;
   }
 
-  .rocket {
-  }
   .wrapper-slider {
     height: 100%;
   }
