@@ -71,6 +71,9 @@
   overflow-x: hidden;
   position: absolute;
   bottom: -60px;
+  @include desktop {
+    bottom: -75px;
+  }
   left: 6rem;
   .slider__section {
     width: 100%;
@@ -93,5 +96,22 @@
     top: 0;
     bottom: 0;
     margin: auto;
+    @include desktop {
+      width: 130px;
+    }
+  }
+}
+
+@include desktop {
+  #section-rocket {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+  }
+
+  .rocket {
+  }
+  .wrapper-slider {
+    height: 100%;
   }
 }
