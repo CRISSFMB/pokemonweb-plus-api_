@@ -1,12 +1,7 @@
-// Por lo general primero van todas las variables para así poder usarlas en todas las hojas que están debajo
 @import './config/variables.scss';
-// Los mixis son parte de estilos "abstractos" que se llaman, porque no se complian como tal pero generan bloques de código en el archivo compilado, estilos abstractos pueden ser, mixins, funciones de sass, variables etc
 @import './config/mixins.scss';
-// Después siguen los resets porque se normalizan estilos que dan los navegadores a cada etiqueta
 @import './base/resets.scss';
-// Normalice se considera un reset :)
 @import './base/normalize.scss';
-
 @import './blocks/video.scss';
 @import './layout/main.scss';
 @import './blocks/hamburger.scss';
