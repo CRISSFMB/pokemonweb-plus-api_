@@ -447,7 +447,7 @@ template {
   left: -100%;
   background-color: #08224e;
   padding: 2rem 0;
-  z-index: 20;
+  z-index: 201;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -719,7 +719,8 @@ template {
   grid-template-columns: 6rem 1fr;
   grid-template-rows: 6rem 1fr;
   padding: 1rem;
-  height: 50%; }
+  height: 50%;
+  top: 0; }
   .rocket__icon {
     background-color: white;
     color: red;
@@ -797,7 +798,9 @@ template {
   #section-rocket {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 300px; }
+    height: 300px;
+    justify-content: center;
+    align-items: center; }
   .wrapper-slider {
     height: 100%; } }
 

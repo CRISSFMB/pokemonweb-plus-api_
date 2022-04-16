@@ -16,6 +16,8 @@
   grid-template-rows: 6rem 1fr;
   padding: 1rem;
   height: 50%;
+
+  top: 0;
   &__icon {
     background-color: $white;
     color: $red;
@@ -107,6 +109,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rocket {
   }
 
   .wrapper-slider {
