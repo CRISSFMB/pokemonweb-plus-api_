@@ -1,4 +1,4 @@
-# project
+# project Pokemon Web Api 
 
 This project is done for study and practice reasons.
 
