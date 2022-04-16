@@ -1,6 +1,6 @@
-# empty-project
+# project
 
-Empty project.
+This project is done for study and practice reasons.
 
 ## Building and running on localhost
 
@@ -10,19 +10,12 @@ First install dependencies:
 npm install
 ```
 
-To create a production build:
+second run :
 
 ```sh
-npm run build-prod
+npm start
 ```
 
-To create a development build:
+# last 
 
-```sh
-npm run build-dev
-```
-
-## Running
-
-```sh
-node dist/bundle.js
+open with live server
