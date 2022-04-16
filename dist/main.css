@@ -726,7 +726,7 @@ template {
     color: red;
     width: 6rem;
     height: 6rem;
-    display: inline-block;
+    display: block;
     line-height: 6rem;
     text-align: center;
     border-radius: 50%;
@@ -735,7 +735,8 @@ template {
     display: inline-block;
     margin: 0;
     line-height: 6rem;
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin-left: 1rem; }
   .rocket__paragraph {
     font-size: 1.6rem;
     grid-column: 1 / 3;
@@ -759,6 +760,36 @@ template {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; }
+
+@media only screen and (min-width: 1024px) {
+  #section-rocket {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    justify-content: center;
+    align-items: center; }
+  .wrapper-slider {
+    height: 100%; } }
+
+.controls {
+  width: 100px;
+  position: relative;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; }
+  .controls__btn {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    font-weight: lighter;
+    font-family: monospace;
+    cursor: pointer;
+    font-size: 3rem; }
 
 /* slider */
 .slider-component {
@@ -795,34 +826,23 @@ template {
         width: 130px; } }
 
 @media only screen and (min-width: 1024px) {
-  #section-rocket {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 300px;
-    justify-content: center;
-    align-items: center; }
   .wrapper-slider {
     height: 100%; } }
 
-.controls {
-  width: 100px;
-  position: relative;
-  top: 40px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto; }
-  .controls__btn {
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    color: black;
-    font-weight: lighter;
-    font-family: monospace;
-    cursor: pointer;
-    font-size: 3rem; }
+.credits {
+  padding: 2rem 1rem;
+  color: #18242e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+.credits-block {
+  text-align: center;
+  font-size: 1.4rem;
+  width: 90%;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 934px; }
+  .credits-block__pokemon-language {
+    margin-bottom: 2rem; }
 
 
 /*# sourceMappingURL=main.css.map*/
