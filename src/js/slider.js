@@ -7,14 +7,11 @@ const slider = document.querySelector('#slider');
 let section = document.querySelectorAll('.slider__section');
 let lastSection = section[section.length - 1];
 
-const btn_right = document.querySelector('#btn--right');
-const btn_left = document.querySelector('#btn--left');
-
 slider.insertAdjacentElement('afterbegin', lastSection);
 /* we change the position of the last section to the first position to be able to focus the second image with the margin left 200%
  */
 
-const next = () => {
+export const next = () => {
   slider.style.marginLeft = '-200%'; // move the image from -100% default to -200%
   slider.style.transition = 'all 1s'; // 5 seconds transition
   let sectionFirst = document.querySelectorAll('.slider__section')[0]; // select the section to move
@@ -24,7 +21,7 @@ const next = () => {
     slider.style.marginLeft = '-100%'; // and focus the slider
   }, 1000);
 };
-const prev = () => {
+export const prev = () => {
   let section = document.querySelectorAll('.slider__section');
   let lastSection = section[section.length - 1];
   slider.style.marginLeft = '0';
@@ -35,6 +32,3 @@ const prev = () => {
     slider.style.marginLeft = '-100%';
   }, 1000);
 };
-
-btn_right.addEventListener('click', next);
-btn_left.addEventListener('click', prev);

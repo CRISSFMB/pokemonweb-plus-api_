@@ -27,6 +27,58 @@ function hamburger(hamburger, nav, menu) {
 
 /***/ }),
 
+/***/ "./src/js/slider.js":
+/*!**************************!*\
+  !*** ./src/js/slider.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "next": () => (/* binding */ next),
+/* harmony export */   "prev": () => (/* binding */ prev)
+/* harmony export */ });
+/* 1- select the slider
+   2- we select the sections
+   3- select the last section
+   4- we select the buttons separately
+  */
+var slider = document.querySelector('#slider');
+var section = document.querySelectorAll('.slider__section');
+var lastSection = section[section.length - 1];
+slider.insertAdjacentElement('afterbegin', lastSection);
+/* we change the position of the last section to the first position to be able to focus the second image with the margin left 200%
+ */
+
+var next = function next() {
+  slider.style.marginLeft = '-200%'; // move the image from -100% default to -200%
+
+  slider.style.transition = 'all 1s'; // 5 seconds transition
+
+  var sectionFirst = document.querySelectorAll('.slider__section')[0]; // select the section to move
+
+  setTimeout(function () {
+    slider.style.transition = 'none'; // eliminamos la trancicion
+
+    slider.insertAdjacentElement('beforeend', sectionFirst); // insert the section that we were going to move
+
+    slider.style.marginLeft = '-100%'; // and focus the slider
+  }, 1000);
+};
+var prev = function prev() {
+  var section = document.querySelectorAll('.slider__section');
+  var lastSection = section[section.length - 1];
+  slider.style.marginLeft = '0';
+  slider.style.transition = 'all 1s';
+  setTimeout(function () {
+    slider.style.transition = 'none';
+    slider.insertAdjacentElement('afterbegin', lastSection);
+    slider.style.marginLeft = '-100%';
+  }, 1000);
+};
+
+/***/ }),
+
 /***/ "./src/scss/styles.scss":
 /*!******************************!*\
   !*** ./src/scss/styles.scss ***!
@@ -104,56 +156,17 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/styles.scss */ "./src/scss/styles.scss");
 /* harmony import */ var _js_hamburger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/hamburger.js */ "./src/js/hamburger.js");
+/* harmony import */ var _js_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/slider */ "./src/js/slider.js");
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  (0,_js_hamburger_js__WEBPACK_IMPORTED_MODULE_1__.hamburger)('.hamburger', '.nav', '.navbar__list__link');
-});
-/* 1- select the slider
-   2- we select the sections
-   3- select the last section
-   4- we select the buttons separately
-  */
 
-var slider = document.querySelector('#slider');
-var section = document.querySelectorAll('.slider__section');
-var lastSection = section[section.length - 1];
 var btn_right = document.querySelector('#btn--right');
 var btn_left = document.querySelector('#btn--left');
-slider.insertAdjacentElement('afterbegin', lastSection);
-/* we change the position of the last section to the first position to be able to focus the second image with the margin left 200%
- */
-
-var next = function next() {
-  slider.style.marginLeft = '-200%'; // move the image from -100% default to -200%
-
-  slider.style.transition = 'all 1s'; // 5 seconds transition
-
-  var sectionFirst = document.querySelectorAll('.slider__section')[0]; // select the section to move
-
-  setTimeout(function () {
-    slider.style.transition = 'none'; // eliminamos la trancicion
-
-    slider.insertAdjacentElement('beforeend', sectionFirst); // insert the section that we were going to move
-
-    slider.style.marginLeft = '-100%'; // and focus the slider
-  }, 1000);
-};
-
-var prev = function prev() {
-  var section = document.querySelectorAll('.slider__section');
-  var lastSection = section[section.length - 1];
-  slider.style.marginLeft = '0';
-  slider.style.transition = 'all 1s';
-  setTimeout(function () {
-    slider.style.transition = 'none';
-    slider.insertAdjacentElement('afterbegin', lastSection);
-    slider.style.marginLeft = '-100%';
-  }, 1000);
-};
-
-btn_right.addEventListener('click', next);
-btn_left.addEventListener('click', prev);
+document.addEventListener('DOMContentLoaded', function () {
+  (0,_js_hamburger_js__WEBPACK_IMPORTED_MODULE_1__.hamburger)('.hamburger', '.nav', '.navbar__list__link');
+  btn_right.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_2__.next);
+  btn_left.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_2__.prev);
+});
 })();
 
 /******/ })()
