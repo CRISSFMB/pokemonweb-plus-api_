@@ -2,20 +2,20 @@
 
 This project is done for study and practice reasons.
 
-## Building and running on localhost
 
-First install dependencies:
+
+## 1- install dependencies:
 
 ```sh
 npm install
 ```
 
-second run :
+## 2- 🚀 Quick start
 
 ```sh
 npm start
 ```
 
-# last 
+## 3- open Server
 
 open with live server
