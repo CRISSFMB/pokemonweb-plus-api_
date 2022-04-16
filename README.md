@@ -1,28 +1,22 @@
-# empty-project
+# Pokemon Web Api 
+![](https://img.shields.io/badge/-html5-orange) ![](https://img.shields.io/badge/-javascript-yellow) ![](https://img.shields.io/badge/-css-blue)
 
-Empty project.
+This project is done for study and practice reasons.
 
-## Building and running on localhost
 
-First install dependencies:
+
+## 1- install dependencies:
 
 ```sh
 npm install
 ```
 
-To create a production build:
+## 2- 🚀 Quick start
 
 ```sh
-npm run build-prod
+npm start
 ```
 
-To create a development build:
+## 3- open Server
 
-```sh
-npm run build-dev
-```
-
-## Running
-
-```sh
-node dist/bundle.js
+open with live server
