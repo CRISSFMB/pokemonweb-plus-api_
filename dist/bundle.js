@@ -36,7 +36,8 @@ function hamburger(hamburger, nav, menu) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "next": () => (/* binding */ next),
-/* harmony export */   "prev": () => (/* binding */ prev)
+/* harmony export */   "prev": () => (/* binding */ prev),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* 1- select the slider
    2- we select the sections
@@ -76,6 +77,11 @@ var prev = function prev() {
     slider.style.marginLeft = '-100%';
   }, 1000);
 };
+var move_slider = {
+  next: next,
+  prev: prev
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (move_slider);
 
 /***/ }),
 
@@ -160,12 +166,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var next = _js_slider__WEBPACK_IMPORTED_MODULE_2__.default.next,
+    prev = _js_slider__WEBPACK_IMPORTED_MODULE_2__.default.prev;
 var btn_right = document.querySelector('#btn--right');
 var btn_left = document.querySelector('#btn--left');
 document.addEventListener('DOMContentLoaded', function () {
   (0,_js_hamburger_js__WEBPACK_IMPORTED_MODULE_1__.hamburger)('.hamburger', '.nav', '.navbar__list__link');
-  btn_right.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_2__.next);
-  btn_left.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_2__.prev);
+  btn_right.addEventListener('click', next);
+  btn_left.addEventListener('click', prev);
 });
 })();
 

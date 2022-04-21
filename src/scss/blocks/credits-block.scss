@@ -1,5 +1,5 @@
 .credits {
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   color: $black-light;
   font-family: $apple;
 }
@@ -7,10 +7,10 @@
 .credits-block {
   text-align: center;
   font-size: 1.4rem;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 934px;
+  // min-width: 320px;
+  // max-width: 934px;
 
   &__pokemon-language {
     margin-bottom: 2rem;

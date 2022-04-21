@@ -2,7 +2,9 @@ import './scss/styles.scss';
 
 import { hamburger } from './js/hamburger.js';
 
-import { next, prev } from './js/slider';
+import move_slider from './js/slider';
+
+const { next, prev } = move_slider;
 
 const btn_right = document.querySelector('#btn--right');
 const btn_left = document.querySelector('#btn--left');

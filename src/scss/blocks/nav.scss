@@ -24,12 +24,43 @@
 
 .navbar {
   &__list {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    @include desktop {
+      font-size: 1.6rem;
+    }
+    position: relative;
+    margin-bottom: 1rem;
     &__link {
       color: $white;
     }
     &__link:hover {
       color: $yellow;
     }
+  }
+
+  &__list:hover::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: rgb(218, 211, 211);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    animation-name: line;
+    animation-duration: 1s;
+  }
+}
+
+//animation nav
+
+@keyframes line {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100px;
   }
 }
 
@@ -47,11 +78,22 @@
 /*media query desktop*/
 
 @include desktop {
-  .nav {
-    @include desktop {
-      position: static;
-      height: 10vh;
+  .navbar {
+    display: flex;
+    width: 50rem;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+    &__list {
+      padding: 1rem;
+      margin: 0;
     }
+  }
+  .nav {
+    position: static;
+    height: 10vh;
+
     &__content {
       display: flex;
       justify-content: space-between;

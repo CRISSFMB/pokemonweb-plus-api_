@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 65.2%;
+  min-width: 320px;
 }
 
 // * {
@@ -16,9 +17,6 @@ html {
 
 a {
   text-decoration: none;
-  // color: black;
-  // display: block;
-  /* Estilos así solo se dan si todos los links de todo el sitio van a ser así, por lo general en un reset solo se resetean estilos que dan los navegadores*/
 }
 
 ul {

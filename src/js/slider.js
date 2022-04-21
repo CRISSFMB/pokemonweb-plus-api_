@@ -32,3 +32,10 @@ export const prev = () => {
     slider.style.marginLeft = '-100%';
   }, 1000);
 };
+
+const move_slider = {
+  next,
+  prev,
+};
+
+export default move_slider;
