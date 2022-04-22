@@ -1,0 +1,23 @@
+.button-scroll {
+  position: fixed;
+  right: 50px;
+  bottom: 1vh;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+  transition: display 3s ease;
+  transition: opacity 3s ease;
+  background-color: rgb(16, 237, 16);
+  z-index: 210;
+}
+.button-scroll:hover {
+  background-color: rgba(16, 16, 15, 0.767);
+  color: white;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

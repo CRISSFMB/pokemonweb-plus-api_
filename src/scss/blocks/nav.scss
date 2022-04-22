@@ -39,17 +39,19 @@
     }
   }
 
-  &__list:hover::after {
-    content: '';
-    width: 0px;
-    height: 2px;
-    background-color: rgb(218, 211, 211);
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transform: translateX(50%);
-    animation-name: line;
-    animation-duration: 1s;
+  @include desktop {
+    &__list:hover::after {
+      content: '';
+      width: 0px;
+      height: 2px;
+      background-color: rgb(218, 211, 211);
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+      animation-name: line;
+      animation-duration: 1s;
+    }
   }
 }
 

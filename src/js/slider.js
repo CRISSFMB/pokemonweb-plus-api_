@@ -33,9 +33,9 @@ export const prev = () => {
   }, 1000);
 };
 
-const move_slider = {
+const controls = {
   next,
   prev,
 };
 
-export default move_slider;
+export default controls;
