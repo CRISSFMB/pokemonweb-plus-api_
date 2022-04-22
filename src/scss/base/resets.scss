@@ -9,6 +9,11 @@ html {
 //   border: 1px solid rgb(26, 89, 99);
 // }
 
+body {
+  background-color: $blue-light;
+  color: $white;
+}
+
 *,
 *:after,
 *::before {

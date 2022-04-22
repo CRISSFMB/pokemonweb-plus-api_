@@ -36,6 +36,58 @@ function buttonScroll(btn) {
 
 /***/ }),
 
+/***/ "./src/js/dark-theme.js":
+/*!******************************!*\
+  !*** ./src/js/dark-theme.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "darkTheme": () => (/* binding */ darkTheme)
+/* harmony export */ });
+function darkTheme(darkbtn, classDark) {
+  // esta liena de codigo referencia al boton
+  var $NodoBtn = document.querySelector(darkbtn); // esta linea de codigo me devuelve todos los elementos con el atributo especificado
+
+  var $selectors = document.querySelectorAll('[data-dark]');
+  var sun = '☀️';
+  var moon = '🌑';
+
+  function darkTheme() {
+    $selectors.forEach(function (node) {
+      return node.classList.add(classDark);
+    });
+    $NodoBtn.textContent = sun;
+    localStorage.setItem('theme', 'dark');
+  }
+
+  function ligthTheme() {
+    $selectors.forEach(function (node) {
+      return node.classList.remove(classDark);
+    });
+    $NodoBtn.textContent = moon;
+    localStorage.setItem('theme', 'light');
+  }
+
+  document.addEventListener('click', function (e) {
+    if (e.target.matches(darkbtn)) {
+      if ($NodoBtn.textContent === moon) {
+        darkTheme();
+      } else {
+        ligthTheme();
+      }
+    }
+  });
+  document.addEventListener('DOMContentLoaded', function (e) {
+    if (localStorage.getItem('theme') === null) localStorage.setItem('theme', 'light');
+    if (localStorage.getItem('theme') === 'light') ligthTheme();
+    if (localStorage.getItem('theme') === 'dark') darkTheme();
+  });
+}
+
+/***/ }),
+
 /***/ "./src/js/hamburger.js":
 /*!*****************************!*\
   !*** ./src/js/hamburger.js ***!
@@ -197,6 +249,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_hamburger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/hamburger.js */ "./src/js/hamburger.js");
 /* harmony import */ var _js_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/slider */ "./src/js/slider.js");
 /* harmony import */ var _js_btn_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/btn-scroll */ "./src/js/btn-scroll.js");
+/* harmony import */ var _js_dark_theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/dark-theme */ "./src/js/dark-theme.js");
+
 
 
 
@@ -206,6 +260,7 @@ var btn_left = document.querySelector('#btn--left');
 document.addEventListener('DOMContentLoaded', function () {
   (0,_js_hamburger_js__WEBPACK_IMPORTED_MODULE_1__.hamburger)('.hamburger', '.nav', '.navbar__list__link');
   (0,_js_btn_scroll__WEBPACK_IMPORTED_MODULE_3__.buttonScroll)('.button-scroll');
+  (0,_js_dark_theme__WEBPACK_IMPORTED_MODULE_4__.darkTheme)('.dark-theme-btn', 'dark-mode');
   btn_right.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_2__.next);
   btn_left.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_2__.prev);
 });

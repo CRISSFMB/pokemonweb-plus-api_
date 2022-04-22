@@ -19,9 +19,9 @@
     <link href="main.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body data-dark>
     <header>
-      <nav class="nav">
+      <nav class="nav" data-dark>
         <div class="nav__content container">
           <img
             class="icon-poke"
@@ -31,10 +31,13 @@
           <!-- <input class="Imput-search" type="text" placeholder="Search" /> -->
           <ul class="navbar">
             <li class="navbar__list">
-              <a class="navbar__list__link" href="#">TEMPORADAS</a>
+              <a class="navbar__list__link" data-dark href="#">TEMPORADAS</a>
             </li>
             <li class="navbar__list">
-              <a class="navbar__list__link" href="./pages/search-pokemon.html"
+              <a
+                class="navbar__list__link"
+                data-dark
+                href="./pages/search-pokemon.html"
                 >SEARCH POKEMON</a
               >
             </li>
@@ -57,6 +60,8 @@
           ></video>
         </div>
       </div>
+      <!-- btn-dark-theme -->
+      <button class="dark-theme-btn">🌑</button>
     </header>
 
     <main class="main">
@@ -164,7 +169,7 @@
             </article>
           </div>
         </section>
-        <a href="#" class="btn btn--gosth"> Weitere Neuigkeiten </a>
+        <a href="#" class="btn btn--gosth data-dark"> Weitere Neuigkeiten </a>
       </div>
 
       <!-- section end  cards  -->
@@ -267,6 +272,7 @@
       </section>
       <!-- section end rocket -->
 
+      <!-- btn float  -->
       <button class="button-scroll hidden">&#11014;</button>
     </main>
 

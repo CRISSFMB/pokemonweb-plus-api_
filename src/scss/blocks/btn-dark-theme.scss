@@ -1,0 +1,36 @@
+/*colors-theme*/
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+/*button*/
+.dark-theme-btn {
+  position: fixed;
+  background-color: inherit;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 1s ease;
+  top: 0;
+  animation: rotation 8s infinite linear;
+  @include desktop {
+    right: 10px;
+  }
+}
+.dark-theme-btn:hover {
+  font-size: 4rem;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
