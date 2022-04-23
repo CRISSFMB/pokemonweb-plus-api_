@@ -472,10 +472,12 @@ template {
   @media only screen and (min-width: 1024px) {
     .navbar__list {
       font-size: 1.6rem; } }
-  .navbar__list__link {
-    color: white; }
-  .navbar__list__link:hover {
-    color: #f9f928; }
+
+.navbar__link {
+  color: white; }
+
+.navbar__link:hover {
+  color: #f9f928; }
 
 @media only screen and (min-width: 1024px) {
   .navbar__list:hover::after {

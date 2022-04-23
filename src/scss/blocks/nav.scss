@@ -31,12 +31,12 @@
     }
     position: relative;
     margin-bottom: 1rem;
-    &__link {
-      color: $white;
-    }
-    &__link:hover {
-      color: $yellow;
-    }
+  }
+  &__link {
+    color: $white;
+  }
+  &__link:hover {
+    color: $yellow;
   }
 
   @include desktop {
