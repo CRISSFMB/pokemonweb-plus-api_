@@ -2,37 +2,6 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/styles.scss ***!
   \***************************************************************************************************************/
 @charset "UTF-8";
-/* Media Queries*/
-/* colors */
-/*fonts*/
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-size: 65.2%;
-  min-width: 320px; }
-
-body {
-  background-color: #08224e;
-  color: white; }
-
-*,
-*:after,
-*::before {
-  box-sizing: inherit; }
-
-a {
-  text-decoration: none; }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-img {
-  max-width: 100%;
-  display: block;
-  height: auto; }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -338,6 +307,37 @@ template {
 [hidden] {
   display: none; }
 
+/* Media Queries*/
+/* colors */
+/*fonts*/
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 65.2%;
+  min-width: 320px; }
+
+body {
+  background-color: #08224e;
+  color: white; }
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto; }
+
 /* Esto no va en reset porque no es una etiqueta html, puede ir acá en helpers porque es una clase que usas en cualquier parte del proyecto y que solo da estilos específicos */
 .container {
   max-width: 1500px;
@@ -419,28 +419,83 @@ template {
   height: 100%;
   object-fit: cover; }
 
-.hamburger {
+#menu-toggle {
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
   position: fixed;
-  width: 5rem;
-  height: 5rem;
-  top: 1rem;
-  right: 2rem;
-  background-color: rgba(0, 0, 0, 0.527);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.6rem;
+  cursor: pointer;
   border-radius: 50%;
-  cursor: pointer; }
-  .hamburger .line {
-    width: 100%;
-    height: 0.3rem;
-    background-color: white; }
-  .hamburger .line2 {
-    opacity: 1; }
+  z-index: 1000;
+  top: -48px;
+  right: 38px; }
+  #menu-toggle span {
+    display: block;
+    background: black;
+    border-radius: 2px; }
+  #menu-toggle #hamburger {
+    position: absolute;
+    width: 50px;
+    height: 50px; }
+    #menu-toggle #hamburger .span {
+      width: 25px;
+      height: 4px;
+      position: relative;
+      top: 28%;
+      left: 50%;
+      margin: 4px 0;
+      transform: translate(-50%); }
+      #menu-toggle #hamburger .span:nth-child(1) {
+        transition-delay: 0.5s; }
+      #menu-toggle #hamburger .span:nth-child(2) {
+        transition-delay: 0.625s; }
+      #menu-toggle #hamburger .span:nth-child(3) {
+        transition-delay: 0.75s; }
+  #menu-toggle #cross {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(45deg); }
+    #menu-toggle #cross span:nth-child(1) {
+      height: 0%;
+      width: 4px;
+      position: absolute;
+      top: 2px;
+      left: 13px;
+      transition-delay: 0s; }
+    #menu-toggle #cross span:nth-child(2) {
+      width: 0%;
+      height: 4px;
+      position: absolute;
+      left: 2px;
+      top: 13px;
+      transition-delay: 0.25s; }
+
+#menu-toggle.open #hamburger span {
+  width: 0%; }
+  #menu-toggle.open #hamburger span:nth-child(1) {
+    transition-delay: 0s; }
+  #menu-toggle.open #hamburger span:nth-child(2) {
+    transition-delay: 0.125s; }
+  #menu-toggle.open #hamburger span:nth-child(3) {
+    transition-delay: 0.25s; }
+
+#menu-toggle.open #cross span {
+  background-color: white; }
+  #menu-toggle.open #cross span:nth-child(1) {
+    height: 80%;
+    transition-delay: 0.625s; }
+  #menu-toggle.open #cross span:nth-child(2) {
+    width: 80%;
+    transition-delay: 0.375s; }
 
 @media only screen and (min-width: 1024px) {
-  .hamburger {
+  #menu-toggle {
     display: none; } }
 
 .nav {
