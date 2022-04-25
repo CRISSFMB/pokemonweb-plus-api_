@@ -1,5 +1,6 @@
 export function hamburgerAnimation(menu, open) {
-  menu.addEventListener('click', () => {
-    menu.classList.toggle(open);
+  const menu_wrapper = document.querySelector(menu);
+  menu_wrapper.addEventListener('click', () => {
+    menu_wrapper.classList.toggle(open);
   });
 }

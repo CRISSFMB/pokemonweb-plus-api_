@@ -99,8 +99,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "hamburgerAnimation": () => (/* binding */ hamburgerAnimation)
 /* harmony export */ });
 function hamburgerAnimation(menu, open) {
-  menu.addEventListener('click', function () {
-    menu.classList.toggle(open);
+  var menu_wrapper = document.querySelector(menu);
+  menu_wrapper.addEventListener('click', function () {
+    menu_wrapper.classList.toggle(open);
   });
 }
 
@@ -277,12 +278,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var btn_right = document.querySelector('#btn--right');
 var btn_left = document.querySelector('#btn--left');
-var menu_wrapper = document.querySelector('#menu-toggle');
 document.addEventListener('DOMContentLoaded', function () {
   (0,_js_open_nav__WEBPACK_IMPORTED_MODULE_4__.openNav)('#menu-toggle', '.nav', '.navbar__list__link');
   (0,_js_btn_scroll__WEBPACK_IMPORTED_MODULE_2__.buttonScroll)('.button-scroll');
   (0,_js_dark_theme__WEBPACK_IMPORTED_MODULE_3__.darkTheme)('.dark-theme-btn', 'dark-mode');
-  (0,_js_hamburger_animate__WEBPACK_IMPORTED_MODULE_5__.hamburgerAnimation)(menu_wrapper, 'open');
+  (0,_js_hamburger_animate__WEBPACK_IMPORTED_MODULE_5__.hamburgerAnimation)('#menu-toggle', 'open');
   btn_right.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_1__.next);
   btn_left.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_1__.prev);
 });

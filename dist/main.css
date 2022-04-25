@@ -338,6 +338,9 @@ img {
   display: block;
   height: auto; }
 
+p {
+  margin: 0; }
+
 /* Esto no va en reset porque no es una etiqueta html, puede ir acá en helpers porque es una clase que usas en cualquier parte del proyecto y que solo da estilos específicos */
 .container {
   max-width: 1500px;
@@ -696,27 +699,20 @@ img {
   .btn--gosth:hover {
     background-color: #0061af; }
 
-.pokemon {
+.pokemon-grid {
   display: grid;
   overflow: hidden;
   position: relative;
   grid-auto-rows: 40% 60%; }
-  .pokemon__svg-img {
-    position: relative; }
-    .pokemon__svg-img__info {
-      color: white;
-      font-size: 1.2rem;
-      text-align: center; }
-    .pokemon__svg-img img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%; }
-  .pokemon__catch-img img {
+
+.pokemon {
+  position: relative; }
+  .pokemon img {
     object-fit: cover;
     height: 100%;
     width: 100%; }
 
-.pokemon-content {
+.pokemon-description {
   position: absolute;
   top: 0;
   left: 0;
@@ -726,49 +722,56 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  .pokemon-content__title {
+  .pokemon-description__info {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center; }
+  .pokemon-description__title {
     display: flex; }
-    .pokemon-content__title__icon {
-      width: 100px;
-      margin-right: 2rem; }
-    .pokemon-content__title__description {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-      color: white;
-      padding: 0 1rem;
-      overflow: hidden;
-      font-size: 1.7rem; }
-      .pokemon-content__title__description__paragraph-title {
-        font-size: 1.9rem;
-        font-weight: 800;
-        margin: 1rem 0; }
-      .pokemon-content__title__description__paragraph {
-        font-size: 1.9rem;
-        margin: 0;
-        padding: 0; }
+  .pokemon-description__icon {
+    width: 100px;
+    margin-right: 2rem; }
+  .pokemon-description__wrapper-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    padding: 0 1rem;
+    padding-left: 2rem;
+    overflow: hidden;
+    font-size: 1.7rem; }
+    .pokemon-description__wrapper-paragraph:nth-child(1) {
+      font-size: 1.9rem;
+      font-weight: 800; }
+    .pokemon-description__wrapper-paragraph:nth-child(2) {
+      font-size: 1.9rem; }
+
+.pokemon-background img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%; }
 
 @media only screen and (min-width: 1024px) {
-  .pokemon {
+  .pokemon-grid {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr); }
-    .pokemon__svg-img img {
+  .pokemon-background {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+    .pokemon-background img {
       object-fit: cover;
       height: 100%;
       width: 100%; }
-    .pokemon__catch-img {
-      position: absolute;
-      width: 60%;
-      height: 100%;
-      right: 0;
-      bottom: 0;
-      z-index: -1; }
-      .pokemon__catch-img img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%; } }
+  .pokemon img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; } }
 
 .adventure-section {
   width: 100%;
