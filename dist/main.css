@@ -537,19 +537,6 @@ p {
 .navbar__link:hover {
   color: #f9f928; }
 
-@media only screen and (min-width: 1024px) {
-  .navbar__list:hover::after {
-    content: '';
-    width: 0px;
-    height: 2px;
-    background-color: #dad3d3;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transform: translateX(50%);
-    animation-name: line;
-    animation-duration: 1s; } }
-
 @keyframes line {
   0% {
     width: 0px; }
@@ -577,6 +564,17 @@ p {
     .navbar__list {
       padding: 1rem;
       margin: 0; }
+    .navbar__list:hover::after {
+      content: '';
+      width: 0px;
+      height: 2px;
+      background-color: #dad3d3;
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+      animation-name: line;
+      animation-duration: 1s; }
   .nav {
     position: static;
     height: 10vh; }
