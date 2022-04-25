@@ -1,0 +1,21 @@
+.flags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 14rem;
+  height: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  @include desktop {
+    margin-bottom: 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    margin: auto;
+  }
+  &__img {
+    width: 30px;
+  }
+}

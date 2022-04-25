@@ -998,5 +998,24 @@ p {
   to {
     transform: rotate(359deg); } }
 
+.flags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 14rem;
+  height: 4rem;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 1024px) {
+    .flags {
+      margin-bottom: 0; } }
+  .flags__wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    margin: auto; }
+  .flags__img {
+    width: 30px; }
+
 
 /*# sourceMappingURL=main.css.map*/
