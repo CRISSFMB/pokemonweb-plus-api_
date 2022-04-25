@@ -806,7 +806,9 @@ p {
   width: 100%;
   max-width: 1900px;
   min-width: 320px;
-  height: 569px; }
+  height: 569px;
+  position: relative;
+  z-index: 10; }
 
 .rocket {
   display: grid;
@@ -981,7 +983,8 @@ p {
   cursor: pointer;
   transition: background-color 1s ease;
   top: 0;
-  animation: rotation 8s infinite linear; }
+  animation: rotation 8s infinite linear;
+  z-index: 9; }
   @media only screen and (min-width: 1024px) {
     .dark-theme-btn {
       right: 10px; } }

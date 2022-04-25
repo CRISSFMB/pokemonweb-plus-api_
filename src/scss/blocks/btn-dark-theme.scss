@@ -18,6 +18,7 @@
   transition: background-color 1s ease;
   top: 0;
   animation: rotation 8s infinite linear;
+  z-index: 9;
   @include desktop {
     right: 10px;
   }
