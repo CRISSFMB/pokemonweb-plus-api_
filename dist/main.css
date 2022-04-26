@@ -488,14 +488,13 @@ p {
   #menu-toggle.open #hamburger span:nth-child(3) {
     transition-delay: 0.25s; }
 
-#menu-toggle.open #cross span {
-  background-color: white; }
-  #menu-toggle.open #cross span:nth-child(1) {
-    height: 80%;
-    transition-delay: 0.625s; }
-  #menu-toggle.open #cross span:nth-child(2) {
-    width: 80%;
-    transition-delay: 0.375s; }
+#menu-toggle.open #cross span:nth-child(1) {
+  height: 80%;
+  transition-delay: 0.625s; }
+
+#menu-toggle.open #cross span:nth-child(2) {
+  width: 80%;
+  transition-delay: 0.375s; }
 
 @media only screen and (min-width: 1024px) {
   #menu-toggle {
@@ -584,6 +583,17 @@ p {
       height: 100%;
       align-items: center;
       margin-top: 0; } }
+
+.section-slider {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  @media only screen and (min-width: 1024px) {
+    .section-slider {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
 
 .Imput-search {
   border-radius: 7px;
@@ -683,10 +693,9 @@ p {
   text-align: center;
   display: block;
   margin-top: 2rem;
-  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
-  color: black; }
+  color: white; }
   .btn--gosth {
     border: 2px solid #096c93;
     background-color: unset;
@@ -701,7 +710,9 @@ p {
   display: grid;
   overflow: hidden;
   position: relative;
-  grid-auto-rows: 40% 60%; }
+  grid-auto-rows: 40% 60%;
+  max-width: 1500px;
+  margin: auto; }
 
 .pokemon {
   position: relative; }
@@ -778,14 +789,17 @@ p {
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image: url(340752c791f43717c15e.webp);
+  background-image: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(9b3ba931b1eae6184946.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  max-width: 1500px;
+  margin: auto; }
 
 .adventure-wrapper {
-  margin-top: 5rem;
+  padding-top: 15rem;
+  margin: auto;
   width: 90%;
   max-width: 524px; }
   .adventure-wrapper__title {
@@ -808,7 +822,9 @@ p {
   min-width: 320px;
   height: 569px;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  max-width: 1500px;
+  margin: auto; }
 
 .rocket {
   display: grid;
@@ -878,7 +894,7 @@ p {
   top: 40px;
   display: flex;
   justify-content: space-between;
-  margin: -12px auto; }
+  margin: -12px 27px; }
   .controls__btn {
     width: 40px;
     height: 40px;
@@ -931,9 +947,11 @@ p {
     height: 100%; } }
 
 .credits {
-  padding: 2rem 0;
-  color: grey;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+  padding: 7rem 0;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 1500px;
+  margin: auto; }
 
 .credits-block {
   text-align: center;
