@@ -1,9 +1,10 @@
 .section-slider {
-  max-width: 1500px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: $blue-light;
   @include desktop {
     padding-right: 3rem;
     padding-left: 3rem;

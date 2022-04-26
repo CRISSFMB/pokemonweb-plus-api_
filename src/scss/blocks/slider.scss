@@ -8,6 +8,7 @@
   overflow-x: hidden;
   position: absolute;
   bottom: -115px;
+
   @include desktop {
     bottom: -75px;
   }

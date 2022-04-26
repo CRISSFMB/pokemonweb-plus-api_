@@ -3,6 +3,7 @@
   max-width: 1500px;
   margin: 0 auto;
   overflow: hidden;
+  background-color: $blue-light;
   @include desktop {
     height: 70vh;
   }

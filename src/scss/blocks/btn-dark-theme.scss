@@ -8,7 +8,7 @@
 /*button*/
 .dark-theme-btn {
   position: fixed;
-  background-color: inherit;
+  background-color: transparent;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -16,11 +16,13 @@
   border: none;
   cursor: pointer;
   transition: background-color 1s ease;
-  top: 0;
   animation: rotation 8s infinite linear;
   z-index: 9;
+  left: 0;
+
   @include desktop {
-    right: 10px;
+    left: unset;
+    right: 0;
   }
 }
 .dark-theme-btn:hover {

@@ -317,7 +317,6 @@ html {
   min-width: 320px; }
 
 body {
-  background-color: #08224e;
   color: white; }
 
 *,
@@ -412,7 +411,8 @@ p {
   width: 100vw;
   max-width: 1500px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #08224e; }
   @media only screen and (min-width: 1024px) {
     .wrapper-video {
       height: 70vh; } }
@@ -500,6 +500,12 @@ p {
   #menu-toggle {
     display: none; } }
 
+header {
+  background-color: #08224e;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative; }
+
 .nav {
   position: fixed;
   width: 100%;
@@ -585,11 +591,12 @@ p {
       margin-top: 0; } }
 
 .section-slider {
-  max-width: 1500px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  background-color: #08224e; }
   @media only screen and (min-width: 1024px) {
     .section-slider {
       padding-right: 3rem;
@@ -711,8 +718,9 @@ p {
   overflow: hidden;
   position: relative;
   grid-auto-rows: 40% 60%;
-  max-width: 1500px;
-  margin: auto; }
+  max-width: 1600px;
+  margin: auto;
+  z-index: 50; }
 
 .pokemon {
   position: relative; }
@@ -789,12 +797,12 @@ p {
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(9b3ba931b1eae6184946.jpg);
+  background-image: linear-gradient(0deg, rgba(34, 12, 23, 0.504), rgba(23, 18, 21, 0.532)), url(9b3ba931b1eae6184946.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  max-width: 1500px;
+  max-width: 1600px;
   margin: auto; }
 
 .adventure-wrapper {
@@ -823,7 +831,7 @@ p {
   height: 569px;
   position: relative;
   z-index: 10;
-  max-width: 1500px;
+  max-width: 1600px;
   margin: auto; }
 
 .rocket {
@@ -950,8 +958,9 @@ p {
   padding: 7rem 0;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  max-width: 1500px;
-  margin: auto; }
+  max-width: 1600px;
+  margin: auto;
+  background-color: #08224e; }
 
 .credits-block {
   text-align: center;
@@ -992,7 +1001,7 @@ p {
 /*button*/
 .dark-theme-btn {
   position: fixed;
-  background-color: inherit;
+  background-color: transparent;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -1000,12 +1009,13 @@ p {
   border: none;
   cursor: pointer;
   transition: background-color 1s ease;
-  top: 0;
   animation: rotation 8s infinite linear;
-  z-index: 9; }
+  z-index: 9;
+  left: 0; }
   @media only screen and (min-width: 1024px) {
     .dark-theme-btn {
-      right: 10px; } }
+      left: unset;
+      right: 0; } }
 
 .dark-theme-btn:hover {
   font-size: 4rem; }
