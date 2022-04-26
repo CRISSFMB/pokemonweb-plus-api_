@@ -1,17 +1,21 @@
 .button-scroll {
   position: fixed;
-  right: 50px;
+  right: 6px;
   bottom: 1vh;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  font-size: 3rem;
+  font-size: 4rem;
   border: none;
   cursor: pointer;
   transition: display 3s ease;
   transition: opacity 3s ease;
-  background-color: rgb(16, 237, 16);
+  background-color: $black;
+  color: $white;
   z-index: 210;
+  border: 3px solid $black;
+  animation: spring ease-in-out 1s infinite;
+  transform: translateY(0);
 }
 .button-scroll:hover {
   background-color: rgba(16, 16, 15, 0.767);
@@ -20,4 +24,14 @@
 .hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+@keyframes spring {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(7px);
+  }
 }
