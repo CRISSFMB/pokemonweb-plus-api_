@@ -270,6 +270,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_dark_theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/dark-theme */ "./src/js/dark-theme.js");
 /* harmony import */ var _js_open_nav__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/open_nav */ "./src/js/open_nav.js");
 /* harmony import */ var _js_hamburger_animate__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/hamburger-animate */ "./src/js/hamburger-animate.js");
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 
 
 
@@ -278,6 +282,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var btn_right = document.querySelector('#btn--right');
 var btn_left = document.querySelector('#btn--left');
+var flags = document.querySelector('.flags');
 document.addEventListener('DOMContentLoaded', function () {
   (0,_js_open_nav__WEBPACK_IMPORTED_MODULE_4__.openNav)('#menu-toggle', '.nav', '.navbar__list__link');
   (0,_js_btn_scroll__WEBPACK_IMPORTED_MODULE_2__.buttonScroll)('.button-scroll');
@@ -285,6 +290,47 @@ document.addEventListener('DOMContentLoaded', function () {
   (0,_js_hamburger_animate__WEBPACK_IMPORTED_MODULE_5__.hamburgerAnimation)('#menu-toggle', 'open');
   btn_right.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_1__.next);
   btn_left.addEventListener('click', _js_slider__WEBPACK_IMPORTED_MODULE_1__.prev);
+  /*cambiar lenguage*/
+
+  flags.addEventListener('click', function (e) {
+    var language = e.target.parentElement.dataset.languages;
+    changeLanguage(language);
+  });
+
+  var changeLanguage = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(language) {
+      var response;
+      return regeneratorRuntime.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.prev = 0;
+              _context.next = 3;
+              return fetch("./languages/".concat(language, ".json"));
+
+            case 3:
+              response = _context.sent;
+              console.log(response);
+              _context.next = 10;
+              break;
+
+            case 7:
+              _context.prev = 7;
+              _context.t0 = _context["catch"](0);
+              console.log(_context.t0);
+
+            case 10:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[0, 7]]);
+    }));
+
+    return function changeLanguage(_x) {
+      return _ref.apply(this, arguments);
+    };
+  }();
 });
 })();
 
