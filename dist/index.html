@@ -44,14 +44,23 @@
 
           <ul class="navbar">
             <li class="navbar__list">
-              <a class="navbar__link" data-dark href="#">TEMPORADAS</a>
+              <a
+                class="navbar__link"
+                data-dark
+                href="#"
+                data-section="section-nav"
+                data-value="list"
+                >bestenliste</a
+              >
             </li>
             <li class="navbar__list">
               <a
                 class="navbar__link"
                 data-dark
                 href="./pages/search-pokemon.html"
-                >SEARCH POKEMON</a
+                data-section="section-nav"
+                data-value="search"
+                >such pokemon</a
               >
             </li>
           </ul>
@@ -88,7 +97,11 @@
     <main class="main">
       <!-- section start cards  -->
       <div class="section-slider" data-dark>
-        <h3 class="new__title text-center title-section-default">
+        <h3
+          class="new__title text-center title-section-default"
+          data-section="slider"
+          data-value="title"
+        >
           Aktuelle Neuigkeiten
         </h3>
         <section class="news">
@@ -101,12 +114,19 @@
                   alt="new-april"
                 />
                 <div class="card__content">
-                  <div class="card__date">4.April.2022</div>
-                  <span class="card__description"
-                    >Molunk, Amfira und weitere Pokémon
-                  </span>
-                  <span class="card__description">
-                    erscheinen beim Rocket-Teamausflug-Event
+                  <div
+                    class="card__date"
+                    data-section="slider"
+                    data-value="date-pokemon-fest"
+                  >
+                    4.April.2022
+                  </div>
+                  <span
+                    class="card__description"
+                    data-section="slider"
+                    data-value="card-pokemon-Fest"
+                    >Pokemon Go Fest 2022: Tickets, Shaymin und alle Details der
+                    Veranstaltung
                   </span>
                 </div>
                 <div class="overlay"></div>
@@ -120,12 +140,18 @@
                   alt="new-april"
                 />
                 <div class="card__content">
-                  <div class="card__date">4.April.2022</div>
-                  <span class="card__description"
-                    >Molunk, Amfira und weitere Pokémon
-                  </span>
-                  <span class="card__description">
-                    erscheinen beim Rocket-Teamausflug-Event
+                  <div
+                    class="card__date"
+                    data-section="slider"
+                    data-value="date-pokemon-go"
+                  >
+                    13.August.2022
+                  </div>
+                  <span
+                    class="card__description"
+                    data-section="slider"
+                    data-value="card-pokemon-go"
+                    >Vielen Dank für einen wundervollen Community Day im April!
                   </span>
                 </div>
                 <div class="overlay"></div>
@@ -139,12 +165,18 @@
                   alt="new-april"
                 />
                 <div class="card__content">
-                  <div class="card__date">4.April.2022</div>
-                  <span class="card__description"
-                    >Molunk, Amfira und weitere Pokémon
-                  </span>
-                  <span class="card__description">
-                    erscheinen beim Rocket-Teamausflug-Event
+                  <div
+                    class="card__date"
+                    data-section="slider"
+                    data-value="date-nigth"
+                  >
+                    4.September.2022
+                  </div>
+                  <span
+                    class="card__description"
+                    data-section="slider"
+                    data-value="card-diarios-Night"
+                    >Bald
                   </span>
                 </div>
                 <div class="overlay"></div>
@@ -158,12 +190,18 @@
                   alt="new-april"
                 />
                 <div class="card__content">
-                  <div class="card__date">4.April.2022</div>
-                  <span class="card__description"
-                    >Molunk, Amfira und weitere Pokémon
-                  </span>
-                  <span class="card__description">
-                    erscheinen beim Rocket-Teamausflug-Event
+                  <div
+                    class="card__date"
+                    data-section="slider"
+                    data-value="date-day-comunity"
+                  >
+                    10.September.2022
+                  </div>
+                  <span
+                    class="card__description"
+                    data-section="slider"
+                    data-value="card-day-community"
+                    >Community Day Mai 2022
                   </span>
                 </div>
                 <div class="overlay"></div>
@@ -177,12 +215,18 @@
                   alt="new-april"
                 />
                 <div class="card__content">
-                  <div class="card__date">4.April.2022</div>
-                  <span class="card__description"
-                    >Molunk, Amfira und weitere Pokémon
-                  </span>
-                  <span class="card__description">
-                    erscheinen beim Rocket-Teamausflug-Event
+                  <div
+                    class="card__date"
+                    data-section="slider"
+                    data-value="date-tips"
+                  >
+                    12.May.2022
+                  </div>
+                  <span
+                    class="card__description"
+                    data-section="slider"
+                    data-value="card-tips"
+                    >Sieben Tipps für den Community Day von Stufful
                   </span>
                 </div>
                 <div class="overlay"></div>
@@ -190,7 +234,15 @@
             </article>
           </div>
         </section>
-        <a href="#" class="btn btn--gosth" data-dark> Weitere Neuigkeiten </a>
+        <a
+          href="#"
+          class="btn btn--gosth"
+          data-dark
+          data-section="slider"
+          data-value="next-news"
+        >
+          Weitere Neuigkeiten
+        </a>
       </div>
 
       <!-- section end  cards  -->
@@ -211,15 +263,20 @@
                   <img src="./assets/icons/poke-icon.png" alt="icon-poke" />
                 </div>
                 <div class="pokemon-description__wrapper-paragraph">
-                  <p>Atrapa Pokémon</p>
-                  <p>¡Encontrad a vuestro compañero!</p>
+                  <p data-section="section-catch-pokemon" data-value="title">
+                    Fangt Pokémon Wählt einen Kumpel!
+                  </p>
                 </div>
               </div>
 
-              <p class="pokemon-description__info">
-                ¡Atrapar Pokémon es una forma de hacerse con ellos! También los
-                podéis conseguir haciendo que los Huevos eclosionen e
-                intercambiando con otros Entrenadores
+              <p
+                class="pokemon-description__info"
+                data-section="section-catch-pokemon"
+                data-value="description"
+              >
+                Pokémon zu fangen ist eine Möglichkeit, sie alle zu schnappen.
+                Ihr könnt aber auch Eier ausbrüten und Pokémon mit anderen
+                Trainern tauschen.
               </p>
             </div>
           </div>
@@ -237,11 +294,21 @@
 
       <section class="adventure-section">
         <div class="adventure-wrapper">
-          <h4 class="adventure-wrapper__title">Objetos para la aventura</h4>
-          <p class="adventure-wrapper__description">
-            Girad los fotodiscos de las Poképaradas y los Gimnasios para recibir
-            objetos que os ayudarán en vuestro viaje por Pokémon GO, como Poké
-            Balls, Bayas, objetos de evolución y mucho más.
+          <h4
+            class="adventure-wrapper__title"
+            data-section="section-hero-sky"
+            data-value="title"
+          >
+            Items für euer Abenteuer
+          </h4>
+          <p
+            class="adventure-wrapper__description"
+            data-section="section-hero-sky"
+            data-value="description"
+          >
+            Dreht die Fotoscheiben von PokéStops und Arenen, um nützliche Items
+            wie Pokébälle, Beeren, Entwicklungssteine und vieles mehr für eure
+            Pokémon GO-Reise zu erhalten.
           </p>
         </div>
       </section>
@@ -254,12 +321,22 @@
         <!-- contenedor principal -->
         <div class="rocket">
           <span class="rocket__icon">R</span>
-          <h3 class="rocket__title">Team GO Rocket</h3>
-          <p class="rocket__paragraph">
-            ¡El Team GO Rocket ha invadido el mundo de Pokémon GO! Tanto si
-            trabajas en una investigación especial como si simplemente tratas de
-            rescatar a los Pokémon oscuros, puedes desafiar al Team GO Rocket y
-            frustrar sus planes.
+          <h3
+            class="rocket__title"
+            data-section="section-team-rocket"
+            data-value="title"
+          >
+            Team GO Rocket
+          </h3>
+          <p
+            class="rocket__paragraph"
+            data-section="section-team-rocket"
+            data-value="description"
+          >
+            Team GO Rocket hat die Welt von Pokémon GO infiltriert! Ihr könnt
+            die Schurken im Rahmen von Spezialforschungen oder einfach unterwegs
+            herausfordern, um Crypto-Pokémon zu retten und die finsteren Pläne
+            von Team GO Rocket zu durchkreuzen.
           </p>
         </div>
         <div class="wrapper-slider">
@@ -302,12 +379,20 @@
     <footer>
       <section class="credits" data-dark>
         <div class="credits-block">
-          <p class="credits-block__pokemon-language">
+          <p
+            class="credits-block__pokemon-language"
+            data-section="section-credits"
+            data-value="languages"
+          >
             Pokémon GO ist auf Englisch, Französisch, Deutsch, Italienisch,
             Russisch, Japanisch, Spanisch, Chinesisch (Traditionell),
             Koreanisch, Thai und Portugiesisch (Brasilien) spielbar.
           </p>
-          <p class="credits-block__pokemon-mark">
+          <p
+            class="credits-block__pokemon-mark"
+            data-section="section-credits"
+            data-value="copy"
+          >
             ©2022 Niantic, Inc. ©2022 Pokémon. ©1995–2022 Nintendo/Creatures
             Inc./GAME FREAK inc. Namen der Pokémon und Charaktere sind
             Warenzeichen von Nintendo. Apple und das Apple-Logo sind Marken der

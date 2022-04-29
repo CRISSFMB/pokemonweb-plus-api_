@@ -1,0 +1,36 @@
+{
+    "section-nav": {
+        "list": "bestenliste",
+        "search": "such pokemon"
+    },
+    "slider": {
+        "title": "Letzte Nachrichten",
+        "date-pokemon-fest": "4 April 2022",
+        "card-pokemon-Fest": "Pokemon Go Fest 2022: Tickets, Shaymin und alle Details der Veranstaltung",
+        "date-pokemon-go": "13 August 2022",
+        "card-pokemon-go": "Vielen Dank für einen wundervollen Community Day im April!",
+        "date-nigth": "4 September 2022",
+        "card-diarios-Night": "Bald",
+        "date-day-comunity": "10 September 2022",
+        "card-day-community": "Community Day Mai 2022",
+        "date-tips": "12 May 2022",
+        "card-tips": "Sieben Tipps für den Community Day von Stufful",
+        "next-news": "Weitere Neuigkeiten"
+    },
+    "section-catch-pokemon": {
+        "title": "Fangt Pokémon Wählt einen Kumpel!",
+        "description": "Pokémon zu fangen ist eine Möglichkeit, sie alle zu schnappen. Ihr könnt aber auch Eier ausbrüten und Pokémon mit anderen Trainern tauschen."
+    },
+    "section-hero-sky": {
+        "title": "Items für euer Abenteuer",
+        "description": "Dreht die Fotoscheiben von PokéStops und Arenen, um nützliche Items wie Pokébälle, Beeren, Entwicklungssteine und vieles mehr für eure Pokémon GO-Reise zu erhalten."
+    },
+    "section-team-rocket": {
+        "title": "Team GO Rocketr",
+        "description": "Team GO Rocket hat die Welt von Pokémon GO infiltriert! Ihr könnt die Schurken im Rahmen von Spezialforschungen oder einfach unterwegs herausfordern, um Crypto-Pokémon zu retten und die finsteren Pläne von Team GO Rocket zu durchkreuzen."
+    },
+    "section-credits": {
+        "languages": "Pokémon GO ist auf Englisch, Französisch, Deutsch, Italienisch, Russisch, Japanisch, Spanisch, Chinesisch (Traditionell), Koreanisch, Thai und Portugiesisch (Brasilien) spielbar.",
+        "copy": "©2022 Niantic, Inc. ©2022 Pokémon. ©1995–2022 Nintendo/Creatures Inc./GAME FREAK inc. Namen der Pokémon und Charaktere sind Warenzeichen von Nintendo. Apple und das Apple-Logo sind Marken der Apple Inc., die in den USA und weiteren Ländern eingetragen sind. App Store ist eine Dienstleistungsmarke der Apple Inc. Google Play und das Google Play-Logo sind Marken von Google LLC. Behalte zur Sicherheit beim Spielen immer deine Umgebung im Auge."
+    }
+}

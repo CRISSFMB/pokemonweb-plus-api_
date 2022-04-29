@@ -1,0 +1,36 @@
+{
+    "section-nav": {
+        "list": "leaderboard",
+        "search": "search pokemon"
+    },
+    "slider": {
+        "title": "Latest news",
+        "date-pokemon-fest": "4 April 2022",
+        "card-pokemon-Fest": "Pokemon Go Fest 2022: tickets, Shaymin and all event details",
+        "date-pokemon-go": "13 August 2022",
+        "card-pokemon-go": "Thank you for a wonderful April Community Day!",
+        "date-nigth": "4 September 2022",
+        "card-diarios-Night": "Coming soon",
+        "date-day-comunity": "10 September 2022",
+        "card-day-community": "Community Day of May 2022",
+        "date-tips": "12 May 2022",
+        "card-tips": "Seven tips for Stufful Community Day",
+        "next-news": "Other News"
+    },
+    "section-catch-pokemon": {
+        "title": "Catch Pokémon Find your buddy!",
+        "description": "Catching Pokémon is one way to collect them! You can also collect them by hatching Eggs and trading with other Trainers."
+    },
+    "section-hero-sky": {
+        "title": "Items for Your Adventure",
+        "description": "Spin Photo Discs at PokéStops and Gyms to receive items that will help you on your Pokémon GO journey, including Poké Balls, Berries, Evolution items, and more."
+    },
+    "section-team-rocket": {
+        "title": "Team GO Rocketr",
+        "description": "Team GO Rocket has invaded the world of Pokémon GO! Whether you’re working on Special Research or just trying to rescue Shadow Pokémon, you can challenge Team GO Rocket and foil their plans."
+    },
+    "section-credits": {
+        "languages": "Pokémon GO is playable in English, French, German, Italian, Russian, Japanese, Spanish, Traditional Chinese, Korean, Thai, and Brazillian Portuguese.",
+        "copy": "©2022 Niantic, Inc. ©2022 Pokémon. ©1995–2022 Nintendo / Creatures Inc. / GAME FREAK inc. Pokémon and Pokémon character names are trademarks of Nintendo. Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC. During gameplay, please be aware of your surroundings and play safely."
+    }
+}

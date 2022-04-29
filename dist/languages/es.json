@@ -1,0 +1,35 @@
+{
+    "section-nav": {
+        "list": "tabla de clasificacion",
+        "search": "busca pokemones"
+    },
+    "slider": {
+        "title": "Ultimas noticias",
+        "date-pokemon-fest": "4 de Abril 2022",
+        "card-pokemon-Fest": "Pokemon Go Fest 2022:entradas, Shaymin y todos los detalles del evento",
+        "date-pokemon-go": "13 de agosto 2022",
+        "card-pokemon-go": "Gracias por un maravilloso Dia de la Comunidad de abril!",
+        "date-nigth": "4 de septiembre 2022",
+        "card-diarios-Night": "Proximamente",
+        "date-day-comunity": "10 septiembre 2022",
+        "card-day-community": "dia de la Comunidad de mayo de 2022",
+        "date-tips": "12 de mayo 2022",
+        "card-tips": "Siete consejos para el Dia de la Comunidad de Stufful",
+        "next-news": "Otras Noticias"
+    },
+    "section-catch-pokemon": {
+        "title": "Atrapa un Pokémon ¡Elige a un amigo!",
+        "description": "Atrapar Pokémon es una forma de atraparlos a todos. También puedes incubar huevos e intercambiar Pokémon con otros Entrenadores."
+    },
+    "section-hero-sky": {
+        "title": "Artículos para su aventura",
+        "description": "Gira las fotos de PokéStops y Arenas para obtener objetos útiles como Pokébol, bayas, piedras evolutivas y mucho más para tu viaje Pokémon GO."
+    },
+    "section-team-rocket": {
+        "title": "Equipo GO Rocket",
+        "description": "¡El Team GO Rocket se ha infiltrado en el mundo de Pokémon GO! Puedes desafiar a los villanos en una investigación especial o simplemente en el camino para salvar Crypto-Pokémon y frustrar los oscuros planes del Team GO Rocket."
+    },
+    "section-credits": {
+        "languages": "©2022 Niantic, Inc. ©2022 Pokémon. ©1995-2022 Nintendo/Creatures Inc. /GAME FREAK inc. Los nombres de los Pokémon y los personajes son marcas registradas de Nintendo. Apple y el logotipo de Apple son marcas comerciales de Apple Inc. , registradas en los Estados Unidos y otros países. App Store es una marca de servicio de Apple Inc. Google Play y el logotipo de Google Play son marcas comerciales de Google LLC. Por seguridad, ten siempre en cuenta tu entorno cuando juegues."
+    }
+}
