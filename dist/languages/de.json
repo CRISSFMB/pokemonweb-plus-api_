@@ -1,7 +1,7 @@
 {
     "section-nav": {
         "list": "bestenliste",
-        "search": "such pokemon"
+        "search": "finde pokemon"
     },
     "slider": {
         "title": "Letzte Nachrichten",
@@ -18,7 +18,7 @@
         "next-news": "Weitere Neuigkeiten"
     },
     "section-catch-pokemon": {
-        "title": "Fangt Pokémon Wählt einen Kumpel!",
+        "title": "Fangt Pokémon und Wählt einen Kumpel!",
         "description": "Pokémon zu fangen ist eine Möglichkeit, sie alle zu schnappen. Ihr könnt aber auch Eier ausbrüten und Pokémon mit anderen Trainern tauschen."
     },
     "section-hero-sky": {
